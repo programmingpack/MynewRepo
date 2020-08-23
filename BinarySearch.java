@@ -3,6 +3,7 @@ public class BinarySearch {
 
 	int search(int arr[],int start,int end,int x) {
 		//start=0; end=arr.length-1;
+		// Binary Search end and start variables
 		if (end >= start) {
 			 int mid=start + (end-start)/2;
 			 if(arr[mid] == x)
@@ -23,7 +24,7 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		
        BinarySearch a=new BinarySearch();
-       int arr[]= {1,2,3,4,5,6,7,8};
+       int arr[]= {1,2,3,4,5,9,10,11};
        int x = 3;
        int result=a.search(arr, 0, arr.length-1, x);
        if(result == -1) {
